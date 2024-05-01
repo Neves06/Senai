@@ -1,11 +1,11 @@
 .container{
     max-width: 1024px;
     margin: 0 auto;
-    display: flex;
+    display: flex ;
 }
 
 .black{
-    width: 400px;
+    max-width: 400px;
     height: 400px;
     background-color: #000;
     color: #fff;
@@ -14,7 +14,7 @@
 }
 
 .white{
-    width: 400px;
+    max-width: 400px;
     height: 400px;
     color: #333;
     padding: 30px;
@@ -27,5 +27,8 @@
 @media screen and (max-width:1024px) {
     .container{
         flex-direction: column; /* Direção dos conteudos do display: flex */
+    }
+    .black, .white{
+        max-width: 100px;
     }
 }
