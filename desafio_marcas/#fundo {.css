@@ -1,0 +1,51 @@
+#fundo {
+    background-color: black;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.celular {
+    flex: 1 1 300px;
+    text-align: center;
+    color: white;
+    max-width: 300px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.botao {
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .celular {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .celular {
+        flex-basis: calc(100% - 20px);
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
