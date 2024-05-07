@@ -11,6 +11,7 @@
             padding: 0;
         }
 
+
         #fundo {
             background-color: black;
             padding: 20px;
@@ -33,13 +34,13 @@
             color: white;
             max-width: 300px;
         }
-
+    
         img {
             max-width: 100%;
             height: auto;
         }
 
-        .botao {
+        .botao { 
             text-decoration: none;
             background-color: whitesmoke;
             color: black;
@@ -47,9 +48,26 @@
             border-radius: 5px;
         }
 
+        .botao:hover{   
+            color: royalblue;
+            background-color: royalblue;
+        }
+
+        .celular:hover{
+
+            background-color: wheat;
+            .botao{
+                background-color: wheat;
+            }
+            img{
+                display: none;
+            }
+        }
+        
         @media screen and (max-width: 1024px) {
             .celular {
                 flex-basis: auto;
+
             }
         }
 
